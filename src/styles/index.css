@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blood-red: #e91e63;
+  --blood-red-dark: #c2185b;
+  --blood-red-light: #f48fb1;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-primary {
+  @apply bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded transition duration-200;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-gray-50 text-red-600 border border-red-600 font-medium py-2 px-4 rounded transition duration-200;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200;
+}
+
+.form-label {
+  @apply block text-gray-700 text-sm font-medium mb-2;
+}
